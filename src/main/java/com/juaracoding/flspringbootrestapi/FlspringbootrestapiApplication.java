@@ -9,5 +9,4 @@ public class FlspringbootrestapiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FlspringbootrestapiApplication.class, args);
 	}
-
 }
