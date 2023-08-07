@@ -24,7 +24,7 @@ public class Crypto {
      */
 //    private static String defaultKey = "aafd12f438cae52538b479e2089ddec2f06cb58faafd12f6";
 //    private static String defaultKey = "aafd12e328cae52538b479e2089ddec2f06cb58faafd12f6";
-    private static String defaultKey = "aafd12e328cae52538d699e2089ddec2f06cb58faafd12f6";
+    private static String defaultKey = "427aaa6af629b18f2cb55c6d1be4720d";
     public static String performEncrypt(String keyText, String plainText) {
         try{
             byte[] key = Hex.decode(keyText.getBytes());
@@ -68,9 +68,7 @@ public class Crypto {
         String strToEncrypt = "996643";//put text to encrypt in here
         String encryptionResult = new Crypto().performEncrypt(strToEncrypt);
         System.out.println("Encryption Result : "+encryptionResult);
-//        cf2afd901b49397179c605d1a5b163fb
-//        7dd1ca8434f021f558935949f98ca316
-        String strToDecrypt = "649aaa6af629b18f2cb55c6d1be4720d";//put text to decrypt in here
+        String strToDecrypt = "44a65a7c641dfc2507b45b11f055d3be";//put text to decrypt in here
         String decriptionResult = new Crypto().performDecrypt(strToDecrypt);
         System.out.println("Decryption Result : "+decriptionResult);
     }

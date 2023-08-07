@@ -26,9 +26,16 @@ public class XJurusan {
     private String strJurusan;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "FakultasId", referencedColumnName = "FakultasId")
+    @JoinColumn(name = "FakultasId", referencedColumnName = "FakultasId", nullable = false)
     private XFakultas fakultas;
 
+    public XFakultas getFakultas() {
+        return fakultas;
+    }
+
+    public void setFakultas(XFakultas fakultas) {
+        this.fakultas = fakultas;
+    }
 
     public Integer getId() {
         return id;
